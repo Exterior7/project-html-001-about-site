@@ -30,7 +30,7 @@ var about = about || {};
     var btnSaveForm = getNode('#btnSaveForm');
     
     btnSaveForm.addEventListener("click", function (e) {
-        e.preventDefault();
+        
 
         // Hiba tömb
         var arrError=[];
@@ -69,9 +69,10 @@ var about = about || {};
             errorField.innerHTML=Message;
             errorField.classList.remove('errorFieldHide');       
             errorField.classList.add('errorFieldShow');       
+            e.preventDefault();
         }
         else {return true};
-    });
+    },false);
 
 
 }(about));
