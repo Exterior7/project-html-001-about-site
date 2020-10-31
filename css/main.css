@@ -1,7 +1,6 @@
 body {
-    background-image: url(https://admin.s2.uni-miskolc.hu/files/8148/ver5.png);
-    background-repeat: no-repeat;
-    background-position: center;
+    background: rgba(255, 255, 255, 0.945);
+    
 }
 
 
@@ -110,6 +109,7 @@ header.special {
 
 h1, h2  {
     font-size: 200%;
+    text-align: center;
 }
 
 
@@ -139,6 +139,10 @@ h1, h2  {
     width: auto;
   }
 }
+
+
+/* Galéria pozíció  */
+
 
 .rowGallery {
     width: 100%;
@@ -180,3 +184,11 @@ h1, h2  {
      
    }
    
+   .errorFieldHide {
+    display: none; 
+
+   }
+   .errorFieldShow {
+    display: block;
+    color: red;
+   }
