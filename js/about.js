@@ -40,7 +40,7 @@ var about = about || {};
         // Chacking Name
         var inpNameValue = inpName.value;
         if (inpNameValue == '' || inpNameValue.length < 5) {
-            arrError.push('A név mező üres vagy kisebb mint 5 karakter');
+            arrError.push('A név mező üres vagy kevesebb mint 5 karakter');
         }
 
         // Chacking Email

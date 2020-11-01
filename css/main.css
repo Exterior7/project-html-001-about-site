@@ -87,17 +87,18 @@ margin-right: 30px;
 
 
 header.special {
-    text-align: center;
+    text-align: center !important;
     margin: 5% 20% 2%;
     line-height: 1.5rem;
 
 }
 
 
-
+/* Galéria */
 .special {
     text-align: center;
     
+          
 }
 
 .mainImg {
@@ -105,6 +106,7 @@ header.special {
     display: inline;
     margin:0rem 5rem;
     opacity:90% ;
+  
 }
 
 h1, h2  {
@@ -112,9 +114,48 @@ h1, h2  {
     text-align: center;
 }
 
+#myPic{
+    text-align: left;
+    
+}
 
 
 
+
+.inp {
+      
+    width: 100%;
+    text-align: center;
+}
+
+.aboutList {
+    width : 25%;
+    border: 1px solid black;
+    display: inline-block;
+    margin: 10px;
+    background-color: whitesmoke;
+    min-height: 200px ;  
+  
+}
+
+.worksRef {
+    width : 45%;
+    border: 1px solid black;
+    display: inline-block;
+    
+    background-color: whitesmoke;
+    min-height: 200px ;  
+
+}
+
+
+
+@media (max-width: 680px) {
+    .aboutList {
+      display: block;
+      width: auto;
+    }
+  }
 
 /* box rendezés  */
 
@@ -122,6 +163,12 @@ h1, h2  {
     
     width: 100%;
     text-align:center;
+    margin-top: 50px;
+    
+}
+
+.mainGallery {
+    text-align: left;
 }
 
 #a, #b, #c {
@@ -168,27 +215,86 @@ h1, h2  {
     }
   }
  
-/* 
-  @media (max-width: 900px) {
-    .position1, .position2, .position3 {
-    width: 45%;
-    }
-  }
-   */
 
+/* Galéria formázás */
    #galleryBg {
   /*background-image: url(/img/bg2.png); */
     background-color: white; 
     background-position:center;
+    
+      }
+
+/* works Box formázás */
+.boxStyle {
+    display: inline-block;
+    width: 35%;
+    background-color: silver;
+    position: relative;
+    min-height: 26vmax;
+}
+
+.boxText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 700px) {
+    .boxStyle {
+      display: block;
+      width: 30%;
+      margin: 5px;
+    }
+  }
+
+
+
+
+#introImg {
+    padding: 10px 25px 5px 0px;
+    float: left;
+}
+
+
+
+.aboutText {
+    line-height: 1.7;
+    text-align: justify;
+    font-weight: lighter;
+    margin-bottom: 50px;
+
    
+    } 
+
+    table {
+        width: 99%;
+        margin-top: 20px;
+        background: #FFFFFF;
+        border-collapse: collapse;
+    }
+    
+    td, th {
+        text-align: center; 
      
-   }
-   
+
+    }
+
+#imgWorks {
+    width: 120%;
+}
+
    .errorFieldHide {
     display: none; 
-
    }
+
+
+
+
    .errorFieldShow {
     display: block;
     color: red;
    }
+
+
+
